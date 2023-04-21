@@ -1,18 +1,18 @@
-package = "luaipc"
+package = "luaipc5.4"
 version = "scm-0"
 source = {
-  url = "git://github.com/siffiejoe/lua-luaipc"
+  url = "git://github.com/ilyafreer/lua5.4-luaipc"
 }
 description = {
   summary = "Portable binding for various IPC mechanisms.",
-  homepage = "https://github.com/siffiejoe/lua-luaipc/",
+  homepage = "https://github.com/ilyafreer/lua5.4-luaipc/",
   license = "MIT"
 }
 -- we probably support more, but it lacks testing (and
 -- probably the build details are different):
 supported_platforms = { "linux", "windows", "freebsd", "macosx" }
 dependencies = {
-  "lua >= 5.1, < 5.4",
+  "lua >= 5.1",
 }
 
 build = {

@@ -1,8 +1,8 @@
 .PHONY: all clean install
 
-# works for Lua 5.2 on Debian based Linuxes:
-LUA_INCDIR = /usr/include/lua5.2
-DLL_INSTALL_DIR = /usr/local/lib/lua/5.2
+# works for Lua 5.4 on Debian based Linuxes:
+LUA_INCDIR = /usr/include
+DLL_INSTALL_DIR = /usr/local/lib/lua/*
 EXTRAFLAGS = -D_POSIX_C_SOURCE=200809L -pthread
 EXTRALIBS = -lrt
 
