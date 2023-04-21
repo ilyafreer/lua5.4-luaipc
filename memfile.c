@@ -339,7 +339,7 @@ static int memfile_close( lua_State* L ) {
   }
   mf->addr = NULL;
   luaL_checkstack( L, 1, "not enough stack space" );
-#if  > 501
+#if LUA_VERSION_NUM > 501
   lua_pushnil( L );
 #else
   lua_pushvalue( L, LUA_GLOBALSINDEX );
