@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/siffiejoe/lua-luaipc.svg?branch=master)](https://travis-ci.org/siffiejoe/lua-luaipc)
-
-#            LuaIPC -- Inter-Process Communication for Lua           #
+#            Fork form LuaIPC -- Inter-Process Communication for Lua 5.4         #
 
 ##                           Introduction                           ##
 
@@ -24,6 +22,17 @@ and POSIX machines (tested on Win 7, Ubuntu Linux, FreeBSD, and OSX).
   [1]: http://w3.impa.br/~diego/software/luasocket/
   [2]: http://keplerproject.github.io/luafilesystem/
 
+## Install ##
+```
+git clone https://github.com/ilyafreer/lua5.4-luaipc.git ./ipc
+cd ./ipc && make install
+cd - && rm -r ipc/
+```
+
+##                             Usage                            ##
+```
+local proc = require( "ipc.proc" )
+```
 
 ##                             Reference                            ##
 
